@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background-image: url("img/texture-paper.png");
+    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -100,11 +100,11 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255);
+    color: rgba(255, 255, 255, .7);
 }
 
 .d-bloc button:hover {
-    color: rgba(255, 255, 255);
+    color: rgba(255, 255, 255, .9);
 }
 
 .d-bloc .icon-round,
@@ -112,7 +112,7 @@ a:hover {
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: rgba(255, 255, 255);
+    border-color: rgba(255, 255, 255, .9);
 }
 
 .d-bloc .divider-h span {
@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255);
+    color: rgba(255, 255, 255, .6);
 }
 
 .d-bloc .a-btn:hover,
@@ -150,7 +150,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255);
+    color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -677,12 +677,12 @@ a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto;
+    margin: auto auto auto auto;
 }
 
 .h1 {
@@ -775,12 +775,12 @@ h4 {
 }
 
 .tc-white {
-    color: #FFFFFF!important;
+    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #000!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -810,19 +810,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.webp");
+    background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.webp");
+    background-image: url("img/lines-h2-bg.png");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.webp");
+    background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.webp");
+    background-image: url("img/image-de-presentation.bmp");
 }
 
 @media (max-width: 1024px) {
@@ -1039,49 +1039,4 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
-}
-
-
-
-/* modifications */
-
-
-.titlepng h2{
-    float: none;
-    margin: 0 auto 10px;
-    font-weight: 600!important;
-    font-size: 22px;
-    max-width: 600px;
-    letter-spacing: -1px;
-
-}
-
-
-.citationpng h3{
-    float: none;
-    text-transform: none;
-    margin: 0 auto 10px;
-    font-weight: 600;
-    font-size: 22px;
-    max-width: 550px;
-    letter-spacing: -1px;
-}
-.citationpng h4{
-    float: none;
-    text-transform: none;
-    margin: 0 auto 10px;
-    font-weight: 600;
-    font-size: 14px;
-    max-width: 550px;
-    letter-spacing: -1px;
-}
-
-
-.title2png h4{
-    float: none;
-    margin: 0 auto 10px;
-    font-weight: 600;
-    font-size: 22px;
-    max-width: 450px;
-    color: #919191!important;
 }
