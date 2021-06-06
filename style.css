@@ -29,6 +29,15 @@ a:hover {
     background-size: cover;
     position: relative;
 }
+.bloc1 {
+    width: 100%;
+    padding: 0 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
 
 .bloc .container {
     padding-left: 0;
@@ -128,68 +137,14 @@ a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.d-bloc .navbar-toggle .icon-bar {
-    background: rgba(255, 255, 255, 1);
-}
 
-.d-bloc .btn-wire,
-.d-bloc .btn-wire:hover {
-    color: rgba(255, 255, 255, 1);
-    border-color: rgba(255, 255, 255, 1);
-}
-
-.d-bloc .panel {
-    color: rgba(0, 0, 0, .5);
-}
-
-.d-bloc .panel button:hover {
-    color: rgba(0, 0, 0, .7);
-}
-
-.d-bloc .panel icon {
-    border-color: rgba(0, 0, 0, .7);
-}
-
-.d-bloc .panel .divider-h span {
-    border-color: rgba(0, 0, 0, .1);
-}
-
-.d-bloc .panel .a-btn {
-    color: rgba(0, 0, 0, .6);
-}
-
-.d-bloc .panel .a-btn:hover {
-    color: rgba(0, 0, 0, 1);
-}
-
-.d-bloc .panel .btn-wire,
-.d-bloc .panel .btn-wire:hover {
-    color: rgba(0, 0, 0, .7);
-    border-color: rgba(0, 0, 0, .3);
-}
-
-.d-bloc .panel,
-.l-bloc {
-    color: rgba(0, 0, 0, .5);
-}
 
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
     color: rgba(0, 0, 0, .7);
 }
 
-.l-bloc .icon-round,
-.l-bloc .icon-square,
-.l-bloc .icon-rounded,
-.l-bloc .icon-semi-rounded-a,
-.l-bloc .icon-semi-rounded-b {
-    border-color: rgba(0, 0, 0, .7);
-}
 
-.d-bloc .panel .divider-h span,
-.l-bloc .divider-h span {
-    border-color: rgba(0, 0, 0, .1);
-}
 
 .d-bloc .panel .a-btn,
 .l-bloc .a-btn,
@@ -231,13 +186,7 @@ a:hover {
     color: rgba(0, 0, 0, .6);
 }
 
-.d-bloc .panel .btn-wire,
-.d-bloc .panel .btn-wire:hover,
-.l-bloc .btn-wire,
-.l-bloc .btn-wire:hover {
-    color: rgba(0, 0, 0, .7);
-    border-color: rgba(0, 0, 0, .3);
-}
+
 
 .voffset {
     margin-top: 30px;
@@ -282,13 +231,6 @@ a:hover {
     display: inline;
 }
 
-.navbar-brand img[src$=svg] {
-    min-width: 100px;
-}
-
-.nav-center .navbar-brand img {
-    margin: 0;
-}
 
 .navbar .nav {
     padding-top: 2px;
@@ -303,9 +245,7 @@ a:hover {
     font-size: 16px;
 }
 
-.navbar-nav .open .dropdown-menu > li > a {
-    text-align: inherit;
-}
+
 
 .nav > li a:hover,
 .nav > li a:focus {
@@ -455,7 +395,7 @@ button {
 }
 
 .icon-lg {
-    font-size: 60px!important;
+    font-size: 48px!important;
 }
 
 .sm-shadow {
@@ -788,11 +728,13 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.webp");
+    background-image: radial-gradient(#7676766d 1px, #ffffff00 1px);
+    background-size: 5px 5px;
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.webp");
+        background-image: repeating-linear-gradient(0deg, #f4f4f4, #f4f4f4 2px, transparent 2px, transparent);
+        background-size: 5px 5px;
 }
 
 .bg-banniere {
