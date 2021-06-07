@@ -104,6 +104,10 @@ a:hover .icon-lg{
     color: rgba(255, 255, 255, 1);
 
 }
+a:focus .icon-lg{
+    color: rgba(255, 255, 255, 1);
+
+}
 
 
 .d-bloc .panel button:hover,
@@ -177,6 +181,9 @@ a:hover .icon-lg{
     font-weight: 600;
     line-height: 44px;
 }
+.navbar-brand:focus {
+    border: rgb(0, 0, 0) 1px dashed;
+}
 
 .navbar-brand img {
     max-height: 200px;
@@ -200,8 +207,11 @@ a:hover .icon-lg{
 
 
 
-.nav > li a:hover,
+.nav > li a:hover {
+    background: transparent;
+}
 .nav > li a:focus {
+    border: dashed 1px black;
     background: transparent;
 }
 
@@ -291,10 +301,12 @@ a:hover .icon-lg{
 }
 
 .btn-d,
-.btn-d:hover,
-.btn-d:focus {
+.btn-d:hover {
     color: #FFF;
     background: rgba(0, 0, 0, .3);
+}
+btn-d:focus{
+    background: red;
 }
 
 button {
@@ -374,6 +386,11 @@ a[data-lightbox]:hover img {
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
+
+a[data-lightbox]:focus img {
+    border: dashed 2px black;
+}
+
 
 #lightbox-modal {
     display: flex;
@@ -539,11 +556,15 @@ h1 {
 .portfolio-thumb {
     margin-bottom: 24px;
 }
+.portfolio-thumb:focus{
+    border: black 2px dashed;
+}
 
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
 }
+
 
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
@@ -576,6 +597,11 @@ h1 {
     background: #c27956!important;
     color: #FFFFFF!important;
 }
+.btn-atomic-tangerine:focus {
+    border: rgb(255, 255, 255) 2px dashed;
+    background: #c27956!important;
+    color: #FFFFFF!important;
+}
 
 .ltc-white {
     color: #FFFFFF!important;
@@ -583,6 +609,9 @@ h1 {
 
 .ltc-white:hover {
     color: #cccccc!important;
+}
+.ltc-white:focus {
+    border: dashed 2px rgb(255, 255, 255);
 }
 
 .icon-dark-slate-blue {
@@ -633,13 +662,13 @@ h1 {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
